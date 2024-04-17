@@ -660,12 +660,12 @@ label {
 
 /* -------------- CSS for EventsTable -------------- */
 
-
+/*
 div {
   max-width: 800px;
   margin: 0 auto;
 }
-
+*/
 table {
   width: 100%;
   border-collapse: collapse;
