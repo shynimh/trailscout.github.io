@@ -34,7 +34,6 @@ export const HomePage = () => {
 
   return (
     <div className="App">
-      {/* ... your existing code ... */}
       <div className="view">
         <div className="row">
           <div className="leftcolumn">
