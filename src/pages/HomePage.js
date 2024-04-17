@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const HomePage = () => {  
   const trails = [
     {
@@ -96,15 +98,21 @@ export const HomePage = () => {
               </div>
             </div>
             <div className="rightcolumn">
-            <h2>Popular Trails</h2>
-              <div className="homepgcard">                
-                <div className="fakeimg">
-                  <img  src='./beachy.jpg' alt='beach img' />
-                </div><br />
-                <div className="fakeimg">Image</div><br />
-                <div className="fakeimg">Image</div>
-                <button>View All</button>
-              </div>
+            <div className="homepgcard">
+            <h3>Popular Trails</h3>
+            <div>
+                  <img className="fakeimg" src='./beachy.jpg' alt='beach img' />
+            </div><br />
+            <div>
+                  <img className="fakeimg" src='./beachy.jpg' alt='beach img' />
+            </div><br />
+            <div>
+                  <img className="fakeimg" src='./beachy.jpg' alt='beach img' />
+            </div><br />
+            
+            <Link to="/toptrails"> <button>View All</button> </Link>
+            
+          </div>
               <div className="homepgcard">
                 <h3>Follow Us</h3>
                 <p>Stay updated with our latest news and updates.</p>
@@ -122,6 +130,8 @@ export const HomePage = () => {
         <div className="footer">
           <h2>Contact Us</h2>
           <p>Email: contact@trailscout.com</p>
+          <a href="https://www.instagram.com" target="_blank"><img className='contactusicon' src='/instagram.png' alt="Instagram Logo" /></a>        
+          <a href="https://www.facebook.com/" target="_blank"><img className='contactusicon' src='/facebook.png' alt="Facebook Logo" /></a>        
         </div>
       </div>
     </div>

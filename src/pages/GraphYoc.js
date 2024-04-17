@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import trailScoutLogo from '../assets/trailscout.jpg';
 import Highcharts from 'highcharts';
 import HighchartsAnnotations from 'highcharts/modules/annotations';
 import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsAccessibility from 'highcharts/modules/accessibility';
-import useAuthCheck from './Auth';
 
 
 // Initialize Highcharts modules
@@ -14,7 +12,6 @@ HighchartsExporting(Highcharts);
 HighchartsAccessibility(Highcharts);
 
 export const GraphYoc = () => {
-  useAuthCheck();
   useEffect(() => {
     const elevationData = [
         [0.0, 225],
@@ -487,14 +484,23 @@ export const GraphYoc = () => {
           <div id="elevationChart"></div>
         </div>
         <div className="rightcolumn">
-          <div className="card">
+        <div className="homepgcard">
             <h3>Popular Trails</h3>
-            <div className="fakeimg">Image</div><br />
-            <div className="fakeimg">Image</div><br />
-            <div className="fakeimg">Image</div>
-            <button>View All</button>
+            <div>
+                  <img className="fakeimg" src='./beachy.jpg' alt='beach img' />
+            </div><br />
+            <div>
+                  <img className="fakeimg" src='./beachy.jpg' alt='beach img' />
+            </div><br />
+            <div>
+                  <img className="fakeimg" src='./beachy.jpg' alt='beach img' />
+            </div><br />
+            
+            <Link to="/toptrails"> <button>View All</button> </Link>
+            
           </div>
-          <div className="card">
+          
+          <div className="homepgcard">
             <h2>About Us</h2>
             <h4>Khushalini RAVI <br /> Shyni Meagana HETTIARACHCHI <br /> Fakhrul Afiq BIN ABD AZIZ</h4>
             <p>WebInt Project 2024 -Trail Scout Team</p>
@@ -505,6 +511,8 @@ export const GraphYoc = () => {
       <div className="footer">
         <h2>Contact Us</h2>
         <p>Email: contact@trailscout.com</p>
+        <a href="https://www.instagram.com" target="_blank"><img className='contactusicon' src='/instagram.png' alt="Instagram Logo" /></a>        
+        <a href="https://www.facebook.com/" target="_blank"><img className='contactusicon' src='/facebook.png' alt="Facebook Logo" /></a>        
       </div>
     </div>
   );

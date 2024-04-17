@@ -17,6 +17,9 @@ export const Profile = () => {
                 <div className="profile-contact">
                     <p className="profile-email">Email: john.doe@example.com</p>
                     <p className="profile-phone">Phone: +1234567890</p>
+                    <br/>
+                    <p className="profile-instagram">Instagram: <a href="https://www.instagram.com" target="_blank">@john_doeig</a></p>
+                    <p className="profile-instagram">Facebook: <a href="https://www.facebook.com/" target="_blank">@john_doefb</a></p>
                 </div>
                 </div>
             </div>
@@ -48,6 +51,8 @@ export const Profile = () => {
       <div className="footer">
         <h2>Contact Us</h2>
         <p>Email: contact@trailscout.com</p>
+        <a href="https://www.instagram.com" target="_blank"><img className='contactusicon' src='/instagram.png' alt="Instagram Logo" /></a>        
+        <a href="https://www.facebook.com/" target="_blank"><img className='contactusicon' src='/facebook.png' alt="Facebook Logo" /></a>        
       </div>
     </div>
     </div>

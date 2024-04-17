@@ -40,6 +40,8 @@ export const Explore = () => {
       <div className="footer">
         <h2>Contact Us</h2>
         <p>Email: contact@trailscout.com</p>
+        <a href="https://www.instagram.com" target="_blank"><img className='contactusicon' src='/instagram.png' alt="Instagram Logo" /></a>        
+        <a href="https://www.facebook.com/" target="_blank"><img className='contactusicon' src='/facebook.png' alt="Facebook Logo" /></a>        
       </div>
     </div>
     </div>

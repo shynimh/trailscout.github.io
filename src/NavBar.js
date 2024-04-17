@@ -22,6 +22,8 @@ export default function NavBar () {
                 <CustomLink to="/">Home</CustomLink>    
                 <CustomLink to="/toptrails">Top Trails</CustomLink>        
                 <CustomLink to="/explore">Explore</CustomLink>
+                <CustomLink to="/grapheve">GraphEve</CustomLink>
+                <CustomLink to="/graphyos">GraphYoc</CustomLink>
 
                 <CustomLink to="/profile">Profile</CustomLink>
                 <CustomLink to="/login"> 

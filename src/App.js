@@ -16,31 +16,6 @@ import { GraphEve } from './pages/GraphEve';
 import { GraphYoc } from './pages/GraphYoc';
 
 
-// function App() {
-//   return (
-//     <div className="App">
-//       {/* <NavBar /> */}
-//       <Router>   
-//         <Routes>
-//           <Route path="/login" element={<Login />}/>
-//           <Route path="/passwordreset" element={<ForgotPassword />} />
-//           <Route path="/signup" element={<SignUp />} />
-
-//           <Route path="*" element={<NotFound />} />
-
-//           <Route path="/" element={<HomePage />} />
-//           <Route path="/explore" element={<Explore />} />
-//           <Route path="/toptrails" element={<TopTrails />} />        
-//           <Route path="/profile" element={<Profile />} />
-//         </Routes>
-//       </Router>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 function App() {
   const location = useLocation();
   const includedPaths = ['/','/home', '/explore', '/profile', '/toptrails','/graphyos',"/grapheve"];
