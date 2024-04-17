@@ -477,8 +477,10 @@ export const GraphYoc = () => {
   }, []);
 
   return (
-    <div>
-      <div className="row">
+    <div className="App">
+      <div className="view">
+    <div>         
+     <div className="row">
         <div className="leftcolumn">
           <h2>Explore the Trails</h2>
           <div id="elevationChart"></div>
@@ -514,6 +516,8 @@ export const GraphYoc = () => {
         <a href="https://www.instagram.com" target="_blank"><img className='contactusicon' src='/instagram.png' alt="Instagram Logo" /></a>        
         <a href="https://www.facebook.com/" target="_blank"><img className='contactusicon' src='/facebook.png' alt="Facebook Logo" /></a>        
       </div>
+    </div>
+    </div>
     </div>
   );
 }
