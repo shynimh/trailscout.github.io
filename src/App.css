@@ -657,3 +657,46 @@ label {
   height: 25px;
   padding:0 5px;
 }
+
+/* -------------- CSS for EventsTable -------------- */
+
+
+div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+thead th {
+  background-color: #CD853F;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #FF7F50;
+}
+
+td {
+  padding: 8px;
+}
+
+td a {
+  color: #6B8E23;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline #A0522D;
+}
+
+
+
