@@ -1,10 +1,9 @@
 import React from "react";
-import { useNavigate, Link } from "react-router-dom"; // Ensure useNavigate is imported
+import { useNavigate, Link } from "react-router-dom"; 
 
 export const HomePage = () => {
-  const navigate = useNavigate(); // Hook for programmatic navigation
+  const navigate = useNavigate(); /
 
-  // Updated trails array with 'path' for each trail
   const trails = [
     {
       name: "Mount Everest",
@@ -29,7 +28,6 @@ export const HomePage = () => {
     },
   ];
 
-  // Function to handle navigation
   const handleViewDetails = (path) => {
     navigate(path);
   };
