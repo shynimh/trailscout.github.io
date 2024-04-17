@@ -1,40 +1,52 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { useNavigate, Link } from "react-router-dom"; // Ensure useNavigate is imported
 
-export const HomePage = () => {  
+export const HomePage = () => {
+  const navigate = useNavigate(); // Hook for programmatic navigation
+
+  // Updated trails array with 'path' for each trail
   const trails = [
     {
       name: "Mount Everest",
       description: "Experience the breathtaking views from the top of the world.",
       imageUrl: "./beachy.jpg",
       diff: "Intermediate",
+      path: "/grapheve", 
     },
     {
       name: "Yosemite National Park",
       description: "Explore the stunning beauty of the iconic Yosemite Valley.",
       imageUrl: "./mountain.jpg",
       diff: "Advanced",
+      path: "/graphyoc",
     },
     {
-      name: "Yosemite National Park",
-      description: "Explore the stunning beauty of the iconic Yosemite Valley.",
+      name: "Banff National Park",
+      description: "The best lake at National Park.",
       imageUrl: "./lake.jpg",
       diff: "Advanced",
+      path: "/grapheve",
     },
   ];
 
-  return (    
+  // Function to handle navigation
+  const handleViewDetails = (path) => {
+    navigate(path);
+  };
+
+  return (
     <div className="App">
+      {/* ... your existing code ... */}
       <div className="view">
-        <div>
-          <div className="row">
-            <div className="leftcolumn">
+        <div className="row">
+          <div className="leftcolumn">
             {trails.map((trail, index) => (
-                <div className="card" key={index} style={{ backgroundImage: `url(${trail.imageUrl})` }}>
-                  <h2>{trail.name}</h2>
-                  <h5>Difficulty: {trail.diff}</h5>
-                  <p>{trail.description}</p>
-                  <button>View Details</button>
-                </div>
+              <div className="card" key={index} style={{ backgroundImage: `url(${trail.imageUrl})` }}>
+                <h2>{trail.name}</h2>
+                <h5>Difficulty: {trail.diff}</h5>
+                <p>{trail.description}</p>
+                <button onClick={() => handleViewDetails(trail.path)}>View Details</button>
+              </div>
               ))}
               
               <div>
@@ -134,6 +146,5 @@ export const HomePage = () => {
           <a href="https://www.facebook.com/" target="_blank"><img className='contactusicon' src='/facebook.png' alt="Facebook Logo" /></a>        
         </div>
       </div>
-    </div>
   );
 }

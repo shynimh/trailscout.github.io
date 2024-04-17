@@ -39,7 +39,7 @@ function App() {
           <Route path="/explore" element={<Explore />} />
           <Route path="/toptrails" element={<TopTrails />} /> 
           <Route path="/grapheve" element={<GraphEve />} /> 
-          <Route path="/graphyos" element={<GraphYoc />} />        
+          <Route path="/graphyoc" element={<GraphYoc />} />        
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
