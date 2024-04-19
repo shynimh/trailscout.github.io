@@ -17,7 +17,7 @@ export const Login = () => {
     const onSubmit = (data) => {
       const { email, password } = data;
       if (password === 'webint123!' && email === 'user@eurecom.com') {
-          window.location.href = "/HomePage";
+          window.location.href = "/";
       } else {
         setLoginError("Invalid email or password");
           // alert("Login Unsuccessful!");
